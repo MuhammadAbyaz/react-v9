@@ -3,7 +3,7 @@ export const Pizza = (props) => {
     <div className="pizza">
       <h1>{props.name}</h1>
       <p>{props.description}</p>
-      <img src={props.image} alt={props.image} />
+      <img src={props.image ?? "https://placehold.co/300"} alt={props.name} />
     </div>
   );
 };
