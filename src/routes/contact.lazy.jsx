@@ -34,7 +34,7 @@ function ContactUs() {
 }
 
 function ContactInput(props) {
-  const [pending] = useFormStatus();
+  const { pending } = useFormStatus();
   return (
     <input
       disabled={pending}
